@@ -8,7 +8,7 @@ interface PlaceHolderApi {
     @GET("posts")
     fun getPosts(): Call<MutableList<bigboydataItem>>
 
-    @GET("posts/(id)")
+    @GET("posts/{id}")
     fun getPostFromItem(@Path("id")id: Int): Call<bigboydataItem>
 
 }
